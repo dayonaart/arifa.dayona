@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 2048 2048" width="1280" height="1280" xmlns="http://www.w3.org/2000/svg">
+<path transform="translate(1059,1049)" d="m0 0h116l27 1v130l-1 1h-142l-1-1v-130z" fill="#EC4921"/>
+<path transform="translate(517,710)" d="m0 0h143l1 1v128l-2 1h-142z" fill="#EC4921"/>
+<path transform="translate(711,535)" d="m0 0h97l36 1v131l-11 1h-122l-1-1v-131z" fill="#EC4921"/>
+<path transform="translate(1497,700)" d="m0 0h131l1 5v127l-2 2h-130l-1-2v-131z" fill="#EC4921"/>
+<path transform="translate(1326,879)" d="m0 0h131l1 1v132l-1 1h-131z" fill="#EC4921"/>
+<path transform="translate(1678,1230)" d="m0 0h131l1 1v132l-3 1h-129z" fill="#EC4921"/>
+<path transform="translate(1497,1230)" d="m0 0h131l1 2-1 131-1 1h-130l-1-1v-132z" fill="#EC4921"/>
+<path transform="translate(881,535)" d="m0 0h94l38 1v131l-2 1h-130l-1-1v-131z" fill="#EC4921"/>
+<path transform="translate(1326,1048)" d="m0 0h131l1 2v131l-1 1h-131z" fill="#EC4921"/>
+<path transform="translate(1364,699)" d="m0 0h38l55 1 1 1v132l-2 1h-130v-134z" fill="#EC4921"/>
+<path transform="translate(1345,515)" d="m0 0h72l40 1 1 1v132l-8 1h-119l-5-1v-133z" fill="#EC4921"/>
+<path transform="translate(1678,700)" d="m0 0h131l1 1v132l-2 1h-130z" fill="#EC4921"/>
+<path transform="translate(710,879)" d="m0 0h133l1 1v129l-5 2h-128l-1-1z" fill="#EC4921"/>
+<path transform="translate(710,1231)" d="m0 0h133l1 1v129l-7 2h-126l-1-1z" fill="#EC4921"/>
+<path transform="translate(880,1231)" d="m0 0h133v131l-2 1h-130l-1-1z" fill="#EC4921"/>
+<path transform="translate(880,879)" d="m0 0h133v131l-4 1h-128l-1-1z" fill="#EC4921"/>
+<path transform="translate(253,1400)" d="m0 0h131l1 1v131h-132z" fill="#EC4921"/>
+<path transform="translate(253,1231)" d="m0 0h132v131l-1 1h-130l-1-1z" fill="#EC4921"/>
+<path transform="translate(253,1052)" d="m0 0h131l1 1v130l-1 1h-131z" fill="#EC4921"/>
+<path transform="translate(254,710)" d="m0 0h127l4 1v130l-1 1h-130l-1-1v-130z" fill="#EC4921"/>
+<path transform="translate(253,881)" d="m0 0h130l2 1v131h-132z" fill="#EC4921"/>
+<path transform="translate(1059,535)" d="m0 0h37l21 2 15 4 12 5 15 9 13 11 11 13 9 15 6 15 3 13 1 8v37l-3 1h-140l-1-1v-131z" fill="#EC4921"/>
+<path transform="translate(624,535)" d="m0 0h36l1 1v131l-1 1h-142l-1-1v-37l4-20 6-15 8-14 8-10 13-13 15-10 13-6 13-4 12-2z" fill="#EC4921"/>
+<path transform="translate(1058,879)" d="m0 0h50l17 3 15 5 11 6 14 10 5 4v2l4 2 11 14 7 12 6 15 3 14 1 8v36l-1 1h-143z" fill="#EC4921"/>
+<path transform="translate(1058,1231)" d="m0 0h144v38l-4 20-6 15-8 14-11 13-8 8-15 10-15 7-13 4-10 2-12 1h-41l-1-1z" fill="#EC4921"/>
+<path transform="translate(563,1230)" d="m0 0h39l59 1v131l-1 1h-41l-18-2-15-4-17-8-14-10-15-15-7-10-9-17-5-16-2-13v-37z" fill="#EC4921"/>
+<path transform="translate(168,710)" d="m0 0h42l1 1v130l-1 1h-141l-1-3v-20l1-18 4-18 7-16 7-12 8-10 12-12 10-7 15-8 15-5 10-2z" fill="#EC4921"/>
+<path transform="translate(517,880)" d="m0 0h144v129l-2 1-42-1-20-4-21-9-12-8-11-9-8-8-11-15-8-15-6-18-3-19z" fill="#EC4921"/>
+<path transform="translate(1927,1229)" d="m0 0h51l1 1v39l-3 17-5 15-8 15-10 13-11 11-15 10-15 7-14 4-11 2-13 1h-27v-134z" fill="#EC4921"/>
+<path transform="translate(1326,1230)" d="m0 0h131l1 1v132l-2 1h-24l-23-2-17-5-16-8-11-8-12-11-10-13-8-14-7-21-2-12z" fill="#EC4921"/>
+</svg>
