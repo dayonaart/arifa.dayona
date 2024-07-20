@@ -29,7 +29,9 @@ const Skills = ({
   return (
     <section ref={ref} className="flex flex-col mb-1 text-[11px]">
       <p className="font-semibold">{skillName}</p>
-      <div className={`h-[13px] rounded-md bg-white p-1`}>
+      <div
+        className={`mobile:h-[13px] tablet:h-[15px] rounded-md bg-white p-1`}
+      >
         <motion.div
           variants={skillVariant}
           animate="visible"

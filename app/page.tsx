@@ -47,12 +47,11 @@ export default function Home() {
 const MainHome = () => {
   return (
     <div className="tablet:flex flex-row mobile:hidden">
-      <div className="flex flex-col w-[50%] gap-4">
+      <div className="flex flex-col w-[50%] gap-6">
         <Welcome />
         <Description />
         <FrameworkList className="flex flex-row gap-4 flex-wrap" />
         <TechnologiesList className="flex flex-row gap-4 flex-wrap text-[11px]" />
-        <SocialMedia />
       </div>
       <div className="w-[50%] flex flex-col items-center">
         <MotionProfile />
@@ -76,7 +75,6 @@ const MobileHome = () => {
       <div className=" border-b-2 border-cyan flex w-full">Skills</div>
       <SkillList className="flex flex-col w-[80%]" />
       <div className=" border-b-2 border-cyan flex w-full" />
-      <SocialMedia />
     </div>
   );
 };
@@ -141,7 +139,7 @@ const Welcome = () => {
 const Description = () => {
   return (
     <motion.ul
-      className="flex flex-col gap-2 list-disc marker:text-lime text-[12px] text-justify"
+      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[12px] laptop:text-[14px] text-justify"
       variants={staggerVariant}
       animate="v"
       initial="e"
@@ -179,10 +177,6 @@ const SkillList = ({ className }: { className: string }) => {
 
 const FrameworkList = ({ className }: { className: string }) => {
   return <Framework className={className} />;
-};
-
-const SocialMedia = () => {
-  return <SocialMediaAndResume className="flex flex-row gap-4 flex-wrap" />;
 };
 
 const TechnologiesList = ({ className }: { className: string }) => {

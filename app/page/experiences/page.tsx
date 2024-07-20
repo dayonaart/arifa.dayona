@@ -10,11 +10,11 @@ import {
 } from "@/constant/constant";
 import { openLink } from "@/lib/utils";
 import { useInView, Variants, motion } from "framer-motion";
-import { LocateFixedIcon } from "lucide-react";
 import Image from "next/image";
 import { useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
+import { LocateFixedIcon } from "lucide-react";
 
 export default function Experiences() {
   return (

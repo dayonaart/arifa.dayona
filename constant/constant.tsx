@@ -1,4 +1,4 @@
-export const SS_API = process.env.SS_API;
+export const SS_API = process.env.NODE_ENV;
 export const PROFILE_DESCRIPTION = [
   "Saya mampu bekerja sama dengan orang yang baru saya kenal. Saya pun dikenal sebagai pendengar yang baik sehingga mampu menangkap inti persoalan dan memberikan solusi yang tepat.",
   "Saya adalah orang yang bisa mengambil keputusan dengan cepat dan tepat, bahkan saat berada pada situasi genting atau di bawah tekanan. Bagi saya, setiap pekerjaan adalah penting. Mengerjakannya dengan teliti dan semaksimal mungkin adalah bentuk tanggung jawab saya.",

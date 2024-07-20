@@ -17,9 +17,6 @@ const config = {
       laptop: "1024px",
       desktop: "1280px",
     },
-    height: {
-      child_screen: "75vh",
-    },
     colors: {
       primary: "#18181b",
       lime: "#84cc16",

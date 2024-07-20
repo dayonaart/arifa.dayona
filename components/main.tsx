@@ -7,11 +7,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BsMenuButtonWideFill } from "react-icons/bs";
 import { open } from "@/management/mobile_nav_state";
+import SocialMediaAndResume from "./social_media";
 
 const navigationLink = [
   { name: "experiences", path: "/page/experiences" },
   { name: "contact", path: "/page/contact" },
 ];
+const navigationLinkTemp = [{ name: "experiences", path: "/page/experiences" }];
 const navItemVariants: Variants = {
   visible: { x: 0, opacity: 1 },
   exit: { x: -10, opacity: 0 },
@@ -22,7 +24,7 @@ export default function Main({ children }: { children: ReactNode }) {
   const dispatch = useDispatch();
   return (
     <div
-      className="flex flex-col"
+      className="min-h-screen flex flex-col"
       onClick={() => {
         if (isNavOpen.value) {
           dispatch(open());
@@ -30,12 +32,13 @@ export default function Main({ children }: { children: ReactNode }) {
       }}
     >
       {/* HEADER NAV */}
-      <div className=" bg-primary px-4 py-6">
+      <div className="bg-primary px-4 py-6 sticky top-0 z-50 ">
         <HeaderNav />
       </div>
       {/* CHILDRENS */}
-      <div className="bg-black/70 p-8">
-        <h1>{children}</h1>
+      <div className="flex-1 bg-black/70 p-8">{children}</div>
+      <div className="sticky bottom-0 bg-primary px-4 py-4 flex mobile:justify-center tablet:justify-start">
+        <SocialMedia />
       </div>
     </div>
   );
@@ -81,7 +84,7 @@ const HeaderNav = () => {
             Dayona
           </motion.p>
         </Link>
-        <MainNav className="tablet:flex gap-8 mobile:hidden" />
+        <TempNav className="tablet:flex gap-8 mobile:hidden" />
         <div className="tablet:hidden right-10 absolute">
           <BsMenuButtonWideFill
             size={25}
@@ -116,4 +119,29 @@ const MainNav = ({ className }: { className: string }) => {
       ))}
     </div>
   );
+};
+
+const TempNav = ({ className }: { className: string }) => {
+  const path = usePathname();
+  return (
+    <div className={className}>
+      {navigationLinkTemp.map((l, i) => (
+        <Link
+          key={i}
+          href={l.path}
+          className={`${
+            path == l.path ? "text-lime" : "text-white"
+          } font-bold hover:text-lime`}
+        >
+          <motion.p variants={navItemVariants} whileHover={{ scale: 1.1 }}>
+            {l.name}
+          </motion.p>
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+const SocialMedia = () => {
+  return <SocialMediaAndResume className="flex flex-row gap-4 flex-wrap " />;
 };
