@@ -6,7 +6,7 @@ import { Technologies } from "@/components/technologies";
 import { PROFILE_DESCRIPTION } from "@/constant/constant";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
-
+import { Analytics } from "@vercel/analytics/react";
 const containerVariant: Variants = {
   v: {
     opacity: 1,
@@ -41,6 +41,7 @@ export default function Home() {
     <div>
       <MainHome />
       <MobileHome />
+      <Analytics />
     </div>
   );
 }
