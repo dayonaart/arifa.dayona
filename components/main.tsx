@@ -10,10 +10,10 @@ import { open } from "@/management/mobile_nav_state";
 import SocialMediaAndResume from "./social_media";
 
 const navigationLink = [
-  { name: "experiences", path: "/page/experiences" },
+  { name: "resume", path: "/page/resume" },
   { name: "contact", path: "/page/contact" },
 ];
-const navigationLinkTemp = [{ name: "experiences", path: "/page/experiences" }];
+const navigationLinkTemp = [{ name: "resume", path: "/page/resume" }];
 const navItemVariants: Variants = {
   visible: { x: 0, opacity: 1 },
   exit: { x: -10, opacity: 0 },
