@@ -11,17 +11,17 @@ import {
 } from "react-icons/fi";
 
 const MEDIA_SOCIAL = [
-  { icon: <FiGithub size={25} />, path: "https://github.com/dayonaart" },
+  { icon: <FiGithub size={20} />, path: "https://github.com/dayonaart" },
   {
-    icon: <FiLinkedin size={25} />,
+    icon: <FiLinkedin size={20} />,
     path: "https://linkedin.com/in/arifa-dayona-49b855194",
   },
   {
-    icon: <FiFacebook size={25} />,
+    icon: <FiFacebook size={20} />,
     path: "https://www.facebook.com/ariesynven",
   },
   {
-    icon: <FiYoutube size={25} />,
+    icon: <FiYoutube size={20} />,
     path: "https://www.youtube.com/@dayona2513",
   },
 ];

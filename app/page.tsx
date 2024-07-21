@@ -68,14 +68,14 @@ const MobileHome = () => {
       <MotionProfile />
       <Welcome />
       <Description />
-      <div className=" border-b-2 border-cyan flex w-full">
+      <div className="border-b-2 border-cyan flex w-full">
         Framework And Technologies
       </div>
-      <FrameworkList className="flex flex-row gap-2 flex-wrap justify-center" />
-      <TechnologiesList className="flex flex-row gap-2 flex-wrap  justify-center text-[10px]" />
-      <div className=" border-b-2 border-cyan flex w-full">Skills</div>
+      <FrameworkList className="flex flex-row gap-2 flex-wrap justify-start" />
+      <TechnologiesList className="flex flex-row gap-2 flex-wrap  justify-start text-[10px]" />
+      <div className="border-b-2 border-cyan flex w-full">Skills</div>
       <SkillList className="flex flex-col w-[80%]" />
-      <div className=" border-b-2 border-cyan flex w-full" />
+      <div className="border-b-2 border-cyan flex w-full" />
     </div>
   );
 };
@@ -140,7 +140,7 @@ const Welcome = () => {
 const Description = () => {
   return (
     <motion.ul
-      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[12px] laptop:text-[14px] text-justify"
+      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[10px] tablet:text-[12px] laptop:text-[12px] text-justify"
       variants={staggerVariant}
       animate="v"
       initial="e"

@@ -37,7 +37,10 @@ export default function Main({ children }: { children: ReactNode }) {
       </div>
       {/* CHILDRENS */}
       <div className="flex-1 bg-black/70 p-8">{children}</div>
-      <div className="sticky bottom-0 bg-primary px-4 py-4 flex mobile:justify-center tablet:justify-start">
+      <div
+        className="sticky bottom-0 bg-primary py-2 flex laptop:pl-8 mobile:justify-center 
+      laptop:justify-start"
+      >
         <SocialMedia />
       </div>
     </div>
@@ -143,5 +146,5 @@ const TempNav = ({ className }: { className: string }) => {
 };
 
 const SocialMedia = () => {
-  return <SocialMediaAndResume className="flex flex-row gap-4 flex-wrap " />;
+  return <SocialMediaAndResume className="flex flex-row gap-4 flex-wrap" />;
 };

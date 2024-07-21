@@ -13,7 +13,8 @@ const TECHNOLOGIES_DATA = [
     link: "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel",
   },
   { name: "GetX", link: "https://pub.dev/packages/get" },
-  { name: "Tailwind CSS", link: "https://tailwindcss.com/docs/installation" },
+  { name: "Tailwind CSS", link: "https://tailwindcss.com/docsinstallation" },
+  { name: "React-REdux", link: "https://react-redux.js.org" },
 ];
 
 export const Technologies = ({ className }: { className?: string }) => {
