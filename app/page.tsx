@@ -140,7 +140,7 @@ const Welcome = () => {
 const Description = () => {
   return (
     <motion.ul
-      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[10px] tablet:text-[12px] laptop:text-[12px] text-justify"
+      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[10px] tablet:text-[11px] text-justify"
       variants={staggerVariant}
       animate="v"
       initial="e"

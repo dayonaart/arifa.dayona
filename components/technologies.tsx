@@ -12,9 +12,13 @@ const TECHNOLOGIES_DATA = [
     name: "MVVM",
     link: "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel",
   },
+  {
+    name: "Coroutines",
+    link: "https://developer.android.com/kotlin/coroutines",
+  },
   { name: "GetX", link: "https://pub.dev/packages/get" },
   { name: "Tailwind CSS", link: "https://tailwindcss.com/docsinstallation" },
-  { name: "React-REdux", link: "https://react-redux.js.org" },
+  { name: "React-Redux", link: "https://react-redux.js.org" },
 ];
 
 export const Technologies = ({ className }: { className?: string }) => {
