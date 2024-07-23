@@ -10,15 +10,15 @@ import { useState } from "react";
 async function sendingMail(payload: RequestBody) {
   await sentMail(payload);
 }
-export default function Contact() {
+export default function HireMe() {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
   const [hasSent, setHasSent] = useState(false);
   return (
-    <div className="flex laptop:hidden mobile:flex-col justify-center items-center gap-10 ">
+    <div className="flex mobile:flex-col mobile:items-start tablet:flex-row tablet:items-start justify-center items-center gap-10 ">
       {hasSent && <Loading />}
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-2 laptop:w-[30%] tablet:w-[40%] mobile:w-full">
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -41,7 +41,7 @@ export default function Contact() {
           rows={5}
         ></textarea>
         <div
-          className="border rounded-md text-center py-2 cursor-pointer"
+          className="border rounded-md text-center py-2 cursor-pointer hover:bg-lime"
           onClick={() => {
             if (!name) {
               alert("Pastikan Nama telah diisi");
@@ -72,25 +72,25 @@ export default function Contact() {
           <h1>Kirim</h1>
         </div>
       </div>
-      <Info />
+      <Info className="flex flex-wrap flex-col gap-4  tablet:w-[20%]" />
     </div>
   );
 }
 
-const Info = () => {
+const Info = ({ className }: { className: string }) => {
   return (
-    <ul className="flex flex-col gap-4">
+    <ul className={className}>
       <div className="flex flex-row gap-2">
-        <MdAlternateEmail size={40} />
-        <li className="text-2xl text-wrap">{MY_CONTACT.email}</li>
+        <MdAlternateEmail size={25} />
+        <li className=" text-wrap">{MY_CONTACT.email}</li>
       </div>
       <div className="flex flex-row gap-2">
-        <FaWhatsapp size={40} />
-        <li className="text-2xl">{MY_CONTACT.phone}</li>
+        <FaWhatsapp size={25} />
+        <li className="">{MY_CONTACT.phone}</li>
       </div>
       <div className="flex flex-row gap-2">
-        <LocateFixedIcon size={40} />
-        <li className="text-2xl">{MY_CONTACT.location}</li>
+        <LocateFixedIcon size={25} />
+        <li className="">{MY_CONTACT.location}</li>
       </div>
     </ul>
   );

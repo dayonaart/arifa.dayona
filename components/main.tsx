@@ -11,9 +11,8 @@ import SocialMediaAndResume from "./social_media";
 
 const navigationLink = [
   { name: "resume", path: "/page/resume" },
-  { name: "contact", path: "/page/contact" },
+  { name: "hire me", path: "/page/hire" },
 ];
-const navigationLinkTemp = [{ name: "resume", path: "/page/resume" }];
 const navItemVariants: Variants = {
   visible: { x: 0, opacity: 1 },
   exit: { x: -10, opacity: 0 },
@@ -36,7 +35,7 @@ export default function Main({ children }: { children: ReactNode }) {
         <HeaderNav />
       </div>
       {/* CHILDRENS */}
-      <div className="flex-1 bg-black/70 p-8">{children}</div>
+      <div className="flex-1 bg-black/70 p-8 content-center">{children}</div>
       <div
         className="sticky bottom-0 bg-primary py-2 flex laptop:pl-8 mobile:justify-center 
       laptop:justify-start"
@@ -87,7 +86,7 @@ const HeaderNav = () => {
             Dayona
           </motion.p>
         </Link>
-        <TempNav className="tablet:flex gap-8 mobile:hidden" />
+        <MainNav className="tablet:flex gap-8 mobile:hidden text-xl" />
         <div className="tablet:hidden right-10 absolute">
           <BsMenuButtonWideFill
             size={25}
@@ -96,7 +95,7 @@ const HeaderNav = () => {
           />
         </div>
         {isNavOpen.value && (
-          <MainNav className="tablet:hidden mobile:flex flex-col absolute top-20 right-10 z-30 border rounded-md gap-4 py-4 px-4 bg-primary" />
+          <MainNav className="tablet:hidden mobile:flex flex-col absolute top-20 right-10 z-30 border rounded-md gap-4 py-4 px-10 bg-primary" />
         )}
       </motion.nav>
     </section>
@@ -105,6 +104,7 @@ const HeaderNav = () => {
 
 const MainNav = ({ className }: { className: string }) => {
   const path = usePathname();
+  const isNavOpen = useSelector((state: RootState) => state.openNav);
   return (
     <div className={className}>
       {navigationLink.map((l, i) => (
@@ -113,28 +113,11 @@ const MainNav = ({ className }: { className: string }) => {
           href={l.path}
           className={`${
             path == l.path ? "text-lime" : "text-white"
-          } font-bold hover:text-lime`}
-        >
-          <motion.p variants={navItemVariants} whileHover={{ scale: 1.1 }}>
-            {l.name}
-          </motion.p>
-        </Link>
-      ))}
-    </div>
-  );
-};
-
-const TempNav = ({ className }: { className: string }) => {
-  const path = usePathname();
-  return (
-    <div className={className}>
-      {navigationLinkTemp.map((l, i) => (
-        <Link
-          key={i}
-          href={l.path}
-          className={`${
-            path == l.path ? "text-lime" : "text-white"
-          } font-bold hover:text-lime`}
+          } font-bold hover:text-lime ${
+            isNavOpen.value
+              ? "border rounded-md px-3 py-1 flex justify-center"
+              : ""
+          }`}
         >
           <motion.p variants={navItemVariants} whileHover={{ scale: 1.1 }}>
             {l.name}
@@ -146,5 +129,5 @@ const TempNav = ({ className }: { className: string }) => {
 };
 
 const SocialMedia = () => {
-  return <SocialMediaAndResume className="flex flex-row gap-4 flex-wrap" />;
+  return <SocialMediaAndResume className="flex flex-row gap-4 items-center" />;
 };

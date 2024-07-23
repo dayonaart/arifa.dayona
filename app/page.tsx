@@ -1,7 +1,6 @@
 "use client";
 import { Framework } from "@/components/framework";
 import Skills from "@/components/skills";
-import SocialMediaAndResume from "@/components/social_media";
 import { Technologies } from "@/components/technologies";
 import { PROFILE_DESCRIPTION } from "@/constant/constant";
 import { motion, Variants } from "framer-motion";
@@ -48,11 +47,15 @@ export default function Home() {
 const MainHome = () => {
   return (
     <div className="tablet:flex flex-row mobile:hidden">
-      <div className="flex flex-col w-[50%] gap-6">
-        <Welcome />
-        <Description />
-        <FrameworkList className="flex flex-row gap-4 flex-wrap" />
-        <TechnologiesList className="flex flex-row gap-4 flex-wrap text-[11px]" />
+      <div className="flex flex-col w-[50%] justify-between gap-2">
+        <div className="flex flex-col gap-2">
+          <Welcome />
+          <Description />
+        </div>
+        <div className="flex flex-col gap-2">
+          <FrameworkList className="flex flex-row gap-4 flex-wrap" />
+          <TechnologiesList className="flex flex-row gap-4 flex-wrap text-[11px]" />
+        </div>
       </div>
       <div className="w-[50%] flex flex-col items-center">
         <MotionProfile />
@@ -112,12 +115,13 @@ const MotionProfile = () => {
         }}
       />
       <Image
+        unoptimized={process.env.NODE_ENV == "development"}
         alt="dayona"
         src="/dayona.png"
         priority={false}
         width={200}
         height={200}
-        className={`${imageSize} absolute p-2 `}
+        className={`${imageSize} absolute p-2`}
       />
     </motion.div>
   );
@@ -140,7 +144,7 @@ const Welcome = () => {
 const Description = () => {
   return (
     <motion.ul
-      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[10px] tablet:text-[11px] text-justify"
+      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[10px] tablet:text-[12px] laptop:text-[14px] text-justify"
       variants={staggerVariant}
       animate="v"
       initial="e"
