@@ -24,35 +24,35 @@ export default function HireMe() {
           onChange={(e) => setName(e.target.value)}
           type="text"
           className="flex bg-primary text-white border border-lime rounded py-3 px-4 leading-tight"
-          placeholder="Nama"
+          placeholder="Name"
         ></input>
         <input
           value={company}
           onChange={(e) => setCompany(e.target.value)}
           type="text"
           className="flex bg-primary text-white border border-lime rounded py-3 px-4 leading-tight"
-          placeholder="Perusahaan"
+          placeholder="Company"
         ></input>
         <textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           className="flex bg-primary text-white border border-lime rounded py-3 px-4 leading-tight"
-          placeholder="Pesan"
+          placeholder="Message"
           rows={5}
         ></textarea>
         <div
           className="border rounded-md text-center py-2 cursor-pointer hover:bg-lime"
           onClick={() => {
             if (!name) {
-              alert("Pastikan Nama telah diisi");
+              alert("Please ensure the Name is filled in");
               return;
             }
             if (!company) {
-              alert("Pastikan Perusahaan telah diisi");
+              alert("Please ensure the Company is filled in");
               return;
             }
             if (!message) {
-              alert("Pastikan Pesan telah diisi");
+              alert("Please ensure the Message is filled in");
               return;
             }
             setHasSent(true);

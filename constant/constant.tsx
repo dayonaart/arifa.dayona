@@ -1,16 +1,16 @@
 export const SS_API = process.env.NODE_ENV;
 export const PROFILE_DESCRIPTION = [
-  "Saya mampu bekerja sama dengan orang yang baru saya kenal. Saya pun dikenal sebagai pendengar yang baik sehingga mampu menangkap inti persoalan dan memberikan solusi yang tepat.",
-  "Saya adalah orang yang bisa mengambil keputusan dengan cepat dan tepat, bahkan saat berada pada situasi genting atau di bawah tekanan. Bagi saya, setiap pekerjaan adalah penting. Mengerjakannya dengan teliti dan semaksimal mungkin adalah bentuk tanggung jawab saya.",
-  "Saya seorang yang kreatif dan suka mencari alternatif solusi dari berbagai macam persoalan. Saya juga bersikap terbuka terhadap semua kemungkinan solusi yang ada. Kreativitas sangat membantu saya untuk menjadi pemimpin yang baik karena saya bisa mengantisipasi berbagai persoalan.",
-  "Saya adalah orang yang sangat fokus terhadap hasil kerja hingga cenderung idealis. Namun, saya juga bisa realistis saat menentukan target atau tujuan dan selalu berupaya keras untuk bisa mencapai tujuan tersebut dengan cara yang baik dan efisien.",
-  "Lahir di Wonosobo, 08 Agustus 1993, Saya adalah orang yang sangat antusias dengan segala hal tentang pemrograman dan selalu merasa tertantang untuk mengerjakan projek-projek baru pembuatan aplikasi berbasis Mobile dan Web.",
+  "I am capable of working well with new people. I am also known as a good listener, able to grasp the core of the issue and provide the right solution.",
+  "I can make quick and accurate decisions, even in critical or high-pressure situations. To me, every task is important. Working on it meticulously and to the best of my ability is my form of responsibility.",
+  "I am a creative person who enjoys finding alternative solutions to various problems. I am also open to all possible solutions. Creativity helps me become a good leader because I can anticipate various issues.",
+  "I am highly focused on work results, often to the point of being idealistic. However, I can also be realistic when setting targets or goals, always striving to achieve them in a good and efficient manner.",
+  "Born in Wonosobo on August 8, 1993, I am someone who is very enthusiastic about everything related to programming and always feels challenged to work on new projects involving Mobile and Web application development.",
 ];
 
 export const ABOUT_ME = [
-  "Saya seorang yang kreatif dan suka mencari alternatif solusi dari berbagai macam persoalan Saya juga bersikap terbuka terhadap semua kemungkinan solusi yang ada. Kreativitas sangat membantu saya untuk menjadi pemimpin yang baik karena saya bisa mengantisipasi berbagai persoalan.",
-  "Saya juga bersikap terbuka terhadap semua kemungkinan solusi yang ada.",
-  "Kreativitas sangat membantu saya untuk menjadi pemimpin yang baik karena saya bisa mengantisipasi berbagai persoalan.",
+  "I am a creative person who enjoys finding alternative solutions to various problems. I am also open to all possible solutions.",
+  "I am also open to all possible solutions.",
+  "Creativity helps me become a good leader because I can anticipate various issues.",
 ];
 
 export const MY_CONTACT = {
@@ -31,7 +31,7 @@ export const WORK_EXPERIENCES = [
     role: "IT Support JNE / IT Support JNE",
     date: "Jan 2017 - Jan 2018",
     description:
-      "Consistently fast, responsible and reliable service has brought JNE into a higher credibility for customers and partners. Along with the increase in foreign investment, national economic growth, the information technology development, and innovations of developed products, the performance of JNE keeps growing and developing in the business world and the people of Indonesia. The business growth and lifestyle evolution has contributed in increasing time sensitive import delivery demand. Not only small package and document scope, but also in handling transportation, logistics, and distribution",
+      "As an IT Support, I assisted clients in resolving server-side issues, ensuring the smooth operation of JNE's systems.",
     website: "https://www.jne.co.id",
     logo: "/jne.svg",
   },
@@ -40,7 +40,7 @@ export const WORK_EXPERIENCES = [
     role: "Junior Mobile Developer",
     date: "Mar 2018 - Jan 2020",
     description:
-      "Cranium is a fast-growing company, and paving the way to be one of prominent leaders of digital world in Indonesia. We are proud to work with finest talents in the industry, whom we believe are our most valuable assets. We have passion for our employees to grow as we do. Here you will have exposure to not only the latest digital technology but also a friendly working environment, office hours, modern management and inspiring leadership which is tailored to support your career and development at best interest, and at the same time boosting the organization to higher level.",
+      "Started my career as a Junior Mobile Engineer, handling projects such as Shusitei (a restaurant app) and Kalm/Kalmselor (an online counseling app). Technologies used include Flutter, Java, Firebase, and Push Notification.",
     website: "https://www.cranium.id",
     logo: "/cranium.svg",
   },
@@ -49,8 +49,8 @@ export const WORK_EXPERIENCES = [
     role: "Advance Mobile Developer",
     date: "Jan 2020 - Sep 2020",
     description:
-      "Sprout adalah sebuah perusahaan konsultan digital end to end di mana kami merasa senang untuk membantu beberapa perusahaan mewujudkan strategi digital mereka. Kami percaya jika anda ingin sukses di era digital, anda harus berpikir tentang bagaimana solusi digital anda bisa bersinergi dengan bisnis yang biasa anda lakukan. Kami senantiasa melihat projek baru sebagai hubungan partner, dimana kami akan membawa keahlian digital kami kepada bisnis yang anda kuasai",
-    website: "https://www.sprout.co.id",
+      "As an Advance Mobile Engineer, I managed projects like Indolab (a pharmacy-based app) using technologies such as Flutter, Firebase, Push Notification, State Management, and Map. Additionally, I learned bridging between Flutter and native code.",
+    website: "https://sprout.co.id/",
     logo: "/sprout.svg",
   },
   {
@@ -58,7 +58,7 @@ export const WORK_EXPERIENCES = [
     role: "Advance Mobile Developer",
     date: "Nov 2020 - Des 2021",
     description:
-      "PT. Infosys Solusi Terpadu (IST) was founded in 2006. We are a solution integrator company that focus primarily to provide innovative digital solutions in the Financial Services Industry, public sector, telecommunication industry and other industry. We provide digital products and solutions to fulfill the need of digital transformation and rapid time-to-market.",
+      "Held the role of Advance Mobile Engineer, overseeing projects like Kumparan (a news and information app with a chat system) and BSI Mobile Banking. Technologies used include Kotlin, XML, Firebase, and Push Notification.",
     website: "https://www.ist.id",
     logo: "/infosys.svg",
   },
@@ -67,7 +67,7 @@ export const WORK_EXPERIENCES = [
     role: "Senior Mobile Developer",
     date: "Jan 2022 - Jan 2024",
     description:
-      "PT. INDOCYBER GLOBAL TEKNOLOGI, an integrated information and technology system provider, dedicated to delivering highly effective solutions in the field of Information Systems. Our core business focuses on information technology services, digital marketing and IT infrastructure.Our company started with only 10 (ten) personnel, currently, after years of experience, we are supported by more than 500 consultants and developers",
+      "As a Senior Mobile Engineer and Advance Frontend Engineer, I worked on projects such as BNI46 Mobile at the client site in Menara BNI Pejompongan. I developed banking-based libraries or SDKs like EDC and MPOS, gained experience in reverse engineering to find vulnerabilities in mobile apps, and learned about encryption and decryption systems. The technologies used were diverse, including Java, Kotlin, Flutter, and React.",
     website: "https://www.indocyber.co.id",
     logo: "/indocyber.svg",
   },

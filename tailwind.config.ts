@@ -52,9 +52,9 @@ const config = {
       wordsets: {
         welcome: {
           words: [
-            "Selamat datang!",
-            "Saya Arifa Dayona",
-            "Saya Adalah",
+            "Welcome!",
+            "I am Arifa Dayona",
+            "I am a",
             "Mobile Developer",
             "Front End Developer",
           ],
