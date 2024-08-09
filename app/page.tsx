@@ -49,17 +49,17 @@ const MainHome = () => {
     <div className="tablet:flex tablet:flex-col tablet:gap-5 mobile:hidden">
       <div className="tablet:flex tablet:gap-20 flex-row ">
         <div className="flex flex-col w-[50%] justify-between gap-2">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-5">
             <Welcome />
             <Description />
+            <FrameworkList className="flex flex-row gap-4 flex-wrap" />
+            <TechnologiesList className="flex flex-row gap-4 flex-wrap text-[11px]" />
           </div>
         </div>
         <div className="w-[50%]">
           <Skill className="flex laptop:flex-row gap-10 tablet:flex-col" />
         </div>
       </div>
-      <FrameworkList className="flex flex-row gap-4 flex-wrap" />
-      <TechnologiesList className="flex flex-row gap-4 flex-wrap text-[11px]" />
     </div>
   );
 };
