@@ -46,21 +46,20 @@ export default function Home() {
 }
 const MainHome = () => {
   return (
-    <div className="tablet:flex flex-row mobile:hidden">
-      <div className="flex flex-col w-[50%] justify-between gap-2">
-        <div className="flex flex-col gap-2">
-          <Welcome />
-          <Description />
+    <div className="tablet:flex tablet:flex-col tablet:gap-5 mobile:hidden">
+      <div className="tablet:flex tablet:gap-20 flex-row ">
+        <div className="flex flex-col w-[50%] justify-between gap-2">
+          <div className="flex flex-col gap-2">
+            <Welcome />
+            <Description />
+          </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <FrameworkList className="flex flex-row gap-4 flex-wrap" />
-          <TechnologiesList className="flex flex-row gap-4 flex-wrap text-[11px]" />
+        <div className="w-[50%]">
+          <Skill className="flex laptop:flex-row gap-10 tablet:flex-col" />
         </div>
       </div>
-      <div className="w-[50%] flex flex-col items-center">
-        <MotionProfile />
-        <SkillList className="flex flex-col w-[50%]" />
-      </div>
+      <FrameworkList className="flex flex-row gap-4 flex-wrap" />
+      <TechnologiesList className="flex flex-row gap-4 flex-wrap text-[11px]" />
     </div>
   );
 };
@@ -75,16 +74,16 @@ const MobileHome = () => {
         Framework And Technologies
       </div>
       <FrameworkList className="flex flex-row gap-2 flex-wrap justify-start" />
-      <TechnologiesList className="flex flex-row gap-2 flex-wrap  justify-start text-[10px]" />
+      <TechnologiesList className="flex flex-row gap-2 flex-wrap  justify-center text-[10px]" />
       <div className="border-b-2 border-cyan flex w-full">Skills</div>
-      <SkillList className="flex flex-col w-[80%]" />
+      <Skill className="flex flex-col w-[80%] gap-4" />
       <div className="border-b-2 border-cyan flex w-full" />
     </div>
   );
 };
 const MotionProfile = () => {
   const imageSize =
-    "desktop:h-[200px] desktop:w-[200px] tablet:h-[160px] tablet:w-[160px] mobile:h-[140px] mobile:w-[140px]";
+    "desktop:h-[150px] desktop:w-[150px] tablet:h-[120px] tablet:w-[120px] mobile:h-[140px] mobile:w-[140px]";
 
   const circleVariant: Variants = {
     v: {
@@ -144,7 +143,7 @@ const Welcome = () => {
 const Description = () => {
   return (
     <motion.ul
-      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[10px] tablet:text-[12px] laptop:text-[14px] text-justify"
+      className="flex flex-col gap-2 list-disc marker:text-lime mobile:text-[10px] tablet:text-[11px] laptop:text-[12px] text-justify"
       variants={staggerVariant}
       animate="v"
       initial="e"
@@ -159,7 +158,7 @@ const Description = () => {
   );
 };
 
-const SkillList = ({ className }: { className: string }) => {
+const Skill = ({ className }: { className: string }) => {
   return (
     <motion.div
       variants={containerVariant}
@@ -168,14 +167,42 @@ const SkillList = ({ className }: { className: string }) => {
       exit="e"
       className={className}
     >
-      <Skills skillName="Java" valueSkill={80} />
-      <Skills skillName="Kotlin" valueSkill={95} />
-      <Skills skillName="Flutter" valueSkill={95} />
-      <Skills skillName="Typescript" valueSkill={65} />
-      <Skills skillName="Javascript" valueSkill={65} />
-      <Skills skillName="Python" valueSkill={55} />
-      <Skills skillName="C++" valueSkill={40} />
-      <Skills skillName="Java Assembly" valueSkill={40} />
+      <div className="tablet:w-[100%] mobile:w-[100%]">
+        <div className="tablet:mt-4 tablet:flex tablet:justify-center mobile:hidden">
+          <MotionProfile />
+        </div>
+        <p className="mt-2 mb-2 font-semibold">Main Skills</p>
+        <div className="flex flex-col gap-2">
+          <Skills skillName="Java" valueSkill={80} />
+          <Skills skillName="Kotlin" valueSkill={95} />
+          <Skills skillName="Flutter" valueSkill={95} />
+          <Skills skillName="Typescript" valueSkill={65} />
+          <Skills skillName="Javascript" valueSkill={65} />
+          <Skills skillName="Python" valueSkill={55} />
+          <Skills skillName="C++" valueSkill={40} />
+        </div>
+      </div>
+      <div className="tablet:w-[100%] flex flex-col gap-5 mobile:w-[100%]">
+        <div className="flex flex-col gap-2">
+          <p className="font-semibold">Extras Skills</p>
+          <Skills skillName="Rest API" valueSkill={90} />
+          <Skills skillName="GraphQL API" valueSkill={50} />
+          <Skills skillName="XML (Native)" valueSkill={70} />
+          <Skills skillName="Jetpact Compose (Native)" valueSkill={80} />
+          <Skills skillName="MVVM/MVC (Cross Platform)" valueSkill={80} />
+          <Skills skillName="GetX (Flutter)" valueSkill={70} />
+          <Skills skillName="Provider (Flutter)" valueSkill={70} />
+          <Skills
+            skillName="Tailwind CSS (Javascript / Typescript)"
+            valueSkill={60}
+          />
+        </div>
+        <div className="flex flex-col gap-2">
+          <p className="font-semibold">Reverse Engineer Skills</p>
+          <Skills skillName="Java Assembly" valueSkill={40} />
+          <Skills skillName="MITM" valueSkill={30} />
+        </div>
+      </div>
     </motion.div>
   );
 };

@@ -6,7 +6,7 @@ import { RiFlutterFill, RiJavaFill, RiNextjsFill } from "react-icons/ri";
 import { SiJavascript, SiTypescript } from "react-icons/si";
 import { TbBrandCpp, TbBrandKotlin } from "react-icons/tb";
 
-const iconClassName = "h-[40px] w-[40px] text-cyan";
+const iconClassName = "h-[30px] w-[30px] text-cyan";
 
 const framworkData = [
   {

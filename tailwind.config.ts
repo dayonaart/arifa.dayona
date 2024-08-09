@@ -54,9 +54,8 @@ const config = {
           words: [
             "Welcome!",
             "I am Arifa Dayona",
-            "I am a",
-            "Mobile Developer",
-            "Front End Developer",
+            "Mobile Engineer",
+            "Front End Engineer",
           ],
           delay: 2,
           pauseBetween: 1,

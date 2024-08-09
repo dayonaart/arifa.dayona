@@ -9,7 +9,7 @@ const Skills = ({
   valueSkill: number;
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
   const skillVariant: Variants = {
     visible: {
       width: !isInView ? "0%" : `${valueSkill}%`,
@@ -27,11 +27,9 @@ const Skills = ({
   };
 
   return (
-    <section ref={ref} className="flex flex-col mb-1 text-[11px]">
+    <section ref={ref} className="flex flex-col text-[11px]">
       <p className="font-semibold">{skillName}</p>
-      <div
-        className={`mobile:h-[13px] tablet:h-[15px] rounded-md bg-white p-1`}
-      >
+      <div className={`mobile:h-[13px] tablet:h-[5px] rounded-md bg-white`}>
         <motion.div
           variants={skillVariant}
           animate="visible"
