@@ -178,7 +178,8 @@ const Skill = ({ className }: { className: string }) => {
           <Skills skillName="Flutter" valueSkill={95} />
           <Skills skillName="Typescript" valueSkill={65} />
           <Skills skillName="Javascript" valueSkill={65} />
-          <Skills skillName="Python" valueSkill={55} />
+          <Skills skillName="Swift" valueSkill={40} />
+          <Skills skillName="Python" valueSkill={40} />
           <Skills skillName="C++" valueSkill={40} />
         </div>
       </div>

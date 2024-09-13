@@ -68,7 +68,7 @@ const SocialMediaAndResume = ({ className }: { className?: string }) => {
         {MEDIA_SOCIAL.map((i) => (
           <motion.div key={i.link} variants={itemStaggerVariant}>
             <Link
-              href={`${path == "/" ? `${i.link}` : `/${i.link}`}`}
+              href={`${path == "/" ? `${i.link}` : `${i.link}`}`}
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 rounded-full flex items-center hover:bg-cyan hover:text-white hover:transition-all duration-1000 hover:border-cyan/70"
